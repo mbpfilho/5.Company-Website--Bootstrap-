@@ -1,0 +1,94 @@
+/*body elements add background image and set it to cover and add font-family*/
+body{
+    font-family: Arvo, serif;
+    background: url(images/cover.jpg) no-repeat center center fixed;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+/*jumbotron padding text-align etc*/
+.jumbotron{
+    background-color: transparent;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+h1{    
+    letter-spacing: 2px;
+}
+.jumbotron a{
+    color: white;
+}
+/*brand image*/
+#logo{
+    width: 44px;
+    height: 40px;
+    /* padding-bottom: 15px; */
+}
+
+/*navigation bar*/
+.navbar-inverse{
+    background: rgba(0, 0, 0, .5);
+}
+.nav li{
+    color: white;
+    font-size: 17px;
+    margin-right: 35px;
+    padding: 10px 0;
+}
+.nav li:hover{
+    border-bottom: 1px solid #07ebb4;
+    padding-bottom: 9px;
+    cursor: pointer;
+}
+/*limit the width of icons section*/
+.container{
+    max-width: 1000px;
+}
+
+/*icons section using bootstrap grid system - color #07ebb4 */
+.bodyimage{
+    margin-top: 40px;
+    height: 100px;
+}
+.icons p{
+    font-size: 15px;
+}
+
+/*contact button*/
+.contact{    
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.btn{
+    background-color: rgba(7, 235, 180, .5);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 70px;
+    letter-spacing: 1.3px;
+}
+.btn:hover{
+    background-color:  rgba(0, 0, 0, .5);
+    color: white;
+    border: none;
+}
+/*footer*/
+.footer{
+    background-color: rgba(0, 0, 0, .5);
+    color: gray;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+/*usa media queries to change size in small devices*/
+@media(max-width:768px){
+    .jumbotron{
+        padding: 0;
+    }
+    .bodyimage{
+        margin-top: 10px;
+        height: 70px;
+    }
+}
+
